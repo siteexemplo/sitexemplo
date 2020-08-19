@@ -1,0 +1,95 @@
+.flex {
+    display: flex;
+
+    flex-direction: row;
+    flex-direction: column;
+
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+
+    flex-flow: column / row wrap;
+
+    /* alinhamento eixo X */
+    justify-content: flex-end;
+    justify-content: flex-start;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+
+    /* alinhamento eixo Y */
+    align-items: center;
+    align-items: flex-end;
+    align-items: flex-start;
+    align-items: stretch;
+
+    /* Alinhamento apenas de um elemento eixo X */
+    align-self: flex-start;
+    align-self: flex-end;
+    align-self: center;
+    align-self: baseline;
+    align-self: stretch;
+    
+    /* alinhamento de linha */
+    align-content: center;
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: space-around ;
+    align-content: space-between;
+
+    /* Esticar */
+    flex-shrink: 0 ou 1;
+    flex-grow:  0 ou 1;
+
+    /* ordem */
+    order: -1 a 1;
+}
+
+
+.grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows:  auto auto ;
+    /* ou */
+    grid-template: auto auto / 1fr 1fr 1fr;
+
+    /* Espaco entre os elementos */
+    grid-column-gap: 10px; 
+    grid-row-gap: 10px;
+    grid-gap: 10px;
+
+    /* Alinhamento eixo X dentro do grid */
+    justify-items: flex-start; 
+    justify-items: flex-end;
+    justify-items: center;
+    justify-items: stretch;
+
+    /* alinhamento eixo Y dentro do grid */
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: baseline;
+    align-items: stretch;
+
+    /* Alinhamento eixo X em geral  */
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between;
+
+    /* Alinhamento eixo Y em geral  */
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-around;
+    align-content: space-between;
+
+    /* Define areas especificas no grid */
+    grid-template-areas:
+    "logo nav nav"
+    "sidenav content advert"
+    "sidenav footer footer";
+    ;
+}
